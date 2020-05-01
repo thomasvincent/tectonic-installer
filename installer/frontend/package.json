@@ -14,7 +14,9 @@
     "build": "mkdir -p ../assets/frontend/scripts && ./node_modules/.bin/browserify --extension=.jsx app.jsx -o ../assets/frontend/scripts/app-bundle.js -t [ babelify ]",
     "dev": "mkdir -p ../assets/frontend/scripts && ./node_modules/.bin/watchify --extension=.jsx app.jsx --verbose -d -o ../assets/frontend/scripts/app-bundle.js -t [ babelify ]",
     "postinstall": "./check-versions.js",
-    "test": "./node_modules/.bin/jest"
+    "test": "./node_modules/.bin/jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "jest": {
     "automock": false,
@@ -38,7 +40,8 @@
     "react-router": "2.4.x",
     "redux": "3.5.x",
     "redux-thunk": "2.1.x",
-    "whatwg-fetch": "1.0.x"
+    "whatwg-fetch": "1.0.x",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-jest": "18.x",
@@ -54,5 +57,6 @@
     "jest-cli": "18.x",
     "semver": "5.x",
     "watchify": "3.x"
-  }
+  },
+  "snyk": true
 }
