@@ -30,7 +30,7 @@
     "immutable": "3.8.x",
     "js-cookie": "2.1.x",
     "jwt-decode": "2.1.x",
-    "lodash": "4.x",
+    "lodash": "4.17.20",
     "react": "15.3.x",
     "react-dom": "15.3.x",
     "react-modal": "1.4.x",
