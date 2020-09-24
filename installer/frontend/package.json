@@ -31,7 +31,7 @@
     "js-cookie": "2.1.x",
     "jwt-decode": "2.1.x",
     "lodash": "4.x",
-    "react": "15.3.x",
+    "react": "16.5.0",
     "react-dom": "15.3.x",
     "react-modal": "1.4.x",
     "react-redux": "4.4.x",
